@@ -1,0 +1,6 @@
+@DoceriaAfetivaGiovanna.API_HostAddress = http://localhost:5271
+
+GET {{DoceriaAfetivaGiovanna.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

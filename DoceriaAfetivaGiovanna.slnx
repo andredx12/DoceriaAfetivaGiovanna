@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/DoceriaAfetivaGiovanna.Tests.csproj" />
+  </Folder>
+  <Project Path="DoceriaAfetivaGiovanna.API/DoceriaAfetivaGiovanna.API.csproj" />
+  <Project Path="DoceriaAfetivaGiovanna.Application/DoceriaAfetivaGiovanna.Application.csproj" />
+  <Project Path="DoceriaAfetivaGiovanna.Domain/DoceriaAfetivaGiovanna.Domain.csproj" />
+  <Project Path="DoceriaAfetivaGiovanna.Infrastructure/DoceriaAfetivaGiovanna.Infrastructure.csproj" />
+</Solution>
