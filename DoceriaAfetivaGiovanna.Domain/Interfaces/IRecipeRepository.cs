@@ -8,6 +8,7 @@ public interface IRecipeRepository
     Task<Recipe?> GetByIdAsync(Guid id);
     Task<Ingredient?> GetIngredientByIdAsync(Guid id);
     Task AddAsync(Recipe recipe);
+    Task AddProductPriceAsync(ProductPrice productPrice);
     void Update(Recipe recipe);
     void Delete(Recipe recipe);
     Task<bool> SaveChangesAsync();

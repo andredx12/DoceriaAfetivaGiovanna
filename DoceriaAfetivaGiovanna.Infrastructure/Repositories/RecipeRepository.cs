@@ -20,6 +20,7 @@ public class RecipeRepository : IRecipeRepository
             .Include(r => r.RecipeIngredients)
                 .ThenInclude(ri => ri.Ingredient)
             .Include(r => r.AdditionalCosts)
+            .Include(r => r.ProductPrice)
             .ToListAsync();
     }
 
@@ -29,6 +30,7 @@ public class RecipeRepository : IRecipeRepository
             .Include(r => r.RecipeIngredients)
                 .ThenInclude(ri => ri.Ingredient)
             .Include(r => r.AdditionalCosts)
+            .Include(r => r.ProductPrice)
             .FirstOrDefaultAsync(r => r.Id == id);
     }
 
@@ -40,6 +42,11 @@ public class RecipeRepository : IRecipeRepository
     public async Task AddAsync(Recipe recipe)
     {
         await _context.Recipes.AddAsync(recipe);
+    }
+
+    public async Task AddProductPriceAsync(ProductPrice productPrice)
+    {
+        await _context.ProductPrices.AddAsync(productPrice);
     }
 
     public void Update(Recipe recipe)
